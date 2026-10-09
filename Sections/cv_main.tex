@@ -1,0 +1,202 @@
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{fontawesome5} % For modern FontAwesome icons
+\usepackage{xcolor}       % For custom colors
+% hyperref is loaded by moderncv itself; loading it here causes an option clash
+\usepackage{graphicx}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{comment} % Used to comment 
+%entire sections
+% Education entry with right-aligned institution (and location) using moderncv's comment column
+\newcommand{\eduentry}[5]{%
+  % #1 date, #2 title/degree, #3 institution (linked), #4 location, #5 detail (thesis/notes)
+  \cvitemwithcomment{#1}{\textbf{#2}}{\textit{#3}, #4}%
+  \ifx\relax#5\relax\else
+    \cvitem{}{\small #5}%
+  \fi
+}
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{1.5cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Msc} % Your first name
+\familyname{Giovanni Tauro} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Designer\&Engineer
+%\title{ Designer for Healthcare\
+%\vspace{0em}Curriculum Vitae%\\
+%\vspace{0em}Product Designer%\\
+%\vspace{0.5em}Co-founder and CPO of Rehabilia Technologies
+}
+
+
+\begin{comment}
+\address{Corso Emanuele Filiberto 41,}{Lecco, 23900, Italy}
+\mobile{+39 3279437161}
+\email{giovanni.taurodi@gmail.com}
+\extrainfo{                 
+  \faLinkedin~\href{https://www.linkedin.com/in/giovanni-tauro-gt/}{\color{blue}LinkedIn} \quad
+  \faGraduationCap~\href{https://scholar.google.com/citations?user=BS0aVGgAAAAJ&hl=it}{\color{blue}Google Scholar} \quad
+  \faFilePdf~\href{https://www.notion.so/Giovanni-Tauro-2a7901d92f3a800b892af425c5875c6a?source=copy_link#2a7901d92f3a804aa9e4ee424ae1b4be}{\color{blue}Portfolio} \quad
+  \faGithub~\href{https://github.com/jotades}{\color{blue}GitHub} \quad
+  \faCubes~\href{https://grabcad.com/giovanni.tauro-1/models}{\color{blue}GrabCAD}
+}   
+\end{comment}
+
+%\homepage{https://publications.cnr.it/authors/giovannitauro}{} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[120pt][0pt]{Pictures/Giovanni_pitch} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+\begin{comment}
+\clearpage
+
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\lipsum[1-2] % Dummy text
+\lipsum[4] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+\newpage
+\end{comment}
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+%\makecvtitle % Print the CV title
+%\vspace{-3em}
+%----------------------------------------------------------------------------------------
+%   COMPACT CUSTOM HEADER
+%----------------------------------------------------------------------------------------
+
+\noindent
+\begin{minipage}[c]{0.72\textwidth}
+    {\Huge \textbf{Giovanni Tauro}}\\[-0.1em]
+    %{\large Designer \& Engineer}\\
+    %{\large Head of Design |  Developer}\\[0.6em]
+    %{\large Product \& Experience Design Leader | CPO \& Co-founder}\\[0.6em]
+    %{\large Product Designer | R\&D Engineer}\\[0.6em]
+    \large Design Engineer, MSc\texttt | Product Development \& Interactive Systems\\[0.6em]
+    %{\large Project Engineer | Product Development \& Digital Transformation\\[0.6em]
+    
+    
+    
+
+    \small
+    \faMapMarker*~\href{https://www.google.com/maps/search/?api=1&query=Lecco+23900+Italy}%{\color{blue}Lecco, 23900, Italy} - 
+    {\color{blue}Bari-Lecco, Italy}
+    \quad
+    \faPhone*~
+    \href{https://wa.me/393279437161}
+    {\color{blue}+39 3279437161}
+    \quad
+    \faEnvelope~\href{mailto:giovanni.taurodi@gmail.com}{\color{blue}giovanni.taurodi@gmail.com}
+    \\[0.5em]
+    \faLinkedin~\href{https://www.linkedin.com/in/giovanni-tauro-gt/}{\color{blue}LinkedIn}
+    \quad
+    \faGithub~\href{https://github.com/jotades}{\color{blue}GitHub}
+    \quad
+    \faGraduationCap~\href{https://scholar.google.com/citations?user=BS0aVGgAAAAJ&hl=it}{\color{blue}Scholar}
+    \quad
+    \faFilePdf~\href{https://www.notion.so/Giovanni-Tauro-2a7901d92f3a800b892af425c5875c6a?source=copy_link#2a7901d92f3a804aa9e4ee424ae1b4be}{\color{blue}Portfolio}
+    \quad
+    \faCubes~\href{https://grabcad.com/giovanni.tauro-1/models}{\color{blue}GrabCAD}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.22\textwidth}
+    \raggedleft
+    \includegraphics[width=2.8cm]{Pictures/Giovanni_pitch}
+\end{minipage}
+
+\vspace{0.8em}
+\hrule
+\vspace{0.8em}
+
+\input{Sections/cv_aboutme}
+\input{Sections/cv_workexperience}
+\vspace{-2em}
+\input{Sections/cv_education}
+\input{Sections/cv_masterthesis}
+\input{Sections/cv_computerskills}
+\vspace{-1em}
+\input{Sections/cv_certifications}
+%\input{Sections/cv_awards}
+
+\input{Sections/CV_Patent}
+\vspace{-1em}
+\input{Sections/cv_launguages}
+%\input{Sections/cv_scientificpublications}
+\input{Sections/cv_communicationskills}
+%\input{Sections/cv_miscellaneousexperience}
+%\input{Sections/cv_interests}
+
+\vspace*{\fill}
+
+\noindent\makebox[\textwidth]{%
+Lecco, \today
+\hfill
+\raisebox{-0.3\height}{\includegraphics[height=1.5cm]{Pictures/sign_gt.jpg}}
+}
+{\scriptsize\centering
+Authorized processing of personal data pursuant to Legislative Decree 196/03.\par}
+    
+    
+    %I authorize the treatment of my personal data according to UE regulation nr. 679/2016.
+    %(*) ai sensi dell’art. 15, comma 1 della Legge 12/11/2011, n. %183 le certificazioni rilasciate dalla
+%P.A. in ordine a stati, qualità personali e fatti sono valide e %utilizzabili solo nei rapporti tra privati;
+%nei rapporti con gli Organi della Pubblica Amministrazione e i gestori di pubblici servizi, i
+%certificati sono sempre sostituiti dalle dichiarazioni sostitutive %di certificazione o dall’atto di
+%notorietà di cui agli artt. 46 e 47 del DPR 445/2000
+%(*) pursuant to Article 15, paragraph 1 of Law No. 183 of November 12, 2011, certificates issued by public administrations regarding personal status, qualities, and facts are valid and usable only in relations between private individuals. In dealings with public administration bodies and public service providers, certificates are always replaced by self-certifications or declarations in lieu of affidavit as provided for in Articles 46 and 47 of Presidential Decree No. 445/2000.
+
+\end{document}
