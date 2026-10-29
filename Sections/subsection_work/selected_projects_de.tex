@@ -1,0 +1,76 @@
+\section{Selected Projects}
+\cventry
+{
+\centering
+\raisebox{-0.60\height}{\includegraphics[height=1cm]{Pictures/Omnitrack.png}}\\[0.1cm]
+{\scriptsize\makebox[1.72cm][c]{\href{https://github.com/jotades/omnitrack_master.git}{\color{blue}GIT\_1}}}\\
+{\scriptsize\makebox[1.72cm][c]{\href{https://github.com/jotades/omnitrack_core.git}{\color{blue}GIT\_2}}}
+{\scriptsize\makebox[1cm][c]{\href{https://github.com/jotades/omnitrack_analysis}{\color{blue}GIT\_3}}}
+}
+{OmniTrack: IoT-based Multimodal Navigation System \href{https://www.frontiersin.org/journals/communications-and-networks/articles/10.3389/frcmn.2026.1829998/abstract}{\color{blue}/Frontiers}}
+{}
+{}
+{}
+{
+\begin{itemize}
+\item Built the data pipeline end to end: UWB ranging and IMU time series from wearable ESP32 tags (micro-ROS), position estimation in ROS 2, and session logging in MongoDB.
+\item Developed OmniAnalytics, a Python/FastAPI backend (pandas, NumPy) with a React dashboard that turns raw session recordings from 16 blind participants into trial metrics: route similarity (DTW, Fr\'echet distance), speed, and target discovery.
+\item Kept data traceable: corrections, exclusions, and annotations are stored separately, so raw recordings are never modified.
+\end{itemize}
+\vspace{+0.2em}
+\texttt{Python • pandas • FastAPI • MongoDB • React • ROS2 • ESP32 • UWB • IMU}
+}
+
+\cventry
+{
+\centering
+\raisebox{-0.80\height}{\includegraphics[height=1.5cm]{Pictures/phicube_rehab.png}}\\[0.1cm]
+{\scriptsize
+\makebox[1cm][c]{%
+\href{https://www.rehabiliatechnologies.com/phicube/}{\color{blue}WEB}%
+}
+}
+}
+{PhiCube: reconfigurable bilateral robotic device for neurorehabilitation \href{https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2026.1829129/abstract}{\color{blue}/Frontiers}}%
+{}
+{}
+{}
+{
+\begin{itemize}
+\item Designed a modular rehabilitation device combining UX research, mechanical design, embedded systems,
+and multimodal interaction.
+\item Validated with 19 children (SUS 85.8/100); 134 patients in two on-going multicentric studies.
+\end{itemize}
+\vspace{+0.2em}
+\texttt{UX • Interaction Design • CAD • Prototyping • Assembly • Usability}
+}
+
+
+
+% A variant can hide this entry by defining \hideRehaBalloon in its main file
+\ifdefined\hideRehaBalloon\else
+\cventry
+{
+\centering
+\raisebox{-0.80\height}{\includegraphics[clip, trim=0.1cm 0.05cm 0.1cm 0.05cm, height=2cm,]{Pictures/rb_1.png}}\\[0.1cm]
+{\scriptsize
+\makebox[1cm][c]{%
+{\href{https://github.com/jasonhof/RehaBalloon/tree/main}{\color{blue}GIT}}
+}
+}
+}
+{RehaBalloon: Interactive Platform}
+{}
+{}
+{}
+{
+\begin{itemize}
+\item Prototyped a low-cost rehabilitation device in 24 hours during the LMU Munich "Hacking with Hardware" challenge, integrating pressure sensing, visual feedback, and embedded electronics.
+\item Implemented a TensorFlow Lite model on Arduino embedded machine learning classifier exercise patterns and record rehabilitation activity metrics in real time.
+\end{itemize}
+\vspace{+0.2em}
+\texttt{Seeed Studio • Sensors • C++ • TensorFlow • Machine Learning}
+}
+\fi
+
+

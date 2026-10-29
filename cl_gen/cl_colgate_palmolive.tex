@@ -1,0 +1,29 @@
+% Cover letter: Data Engineer, Wearables (Job #176270, Topeka, Kansas), Colgate-Palmolive
+% CV: Sections/cv_data_engineer.tex -> cv_gen/cv_giovanni_tauro-colgate_palmolive.pdf
+\documentclass[11pt,a4paper,sans]{moderncv}
+\input{cl_gen/cl_base}
+
+\begin{document}
+
+\clheader{R\&D Engineer, PhD Candidate | Wearable Sensor Data \& IoT}
+
+\recipient{Talent Acquisition Team}{Colgate-Palmolive Company}
+\opening{Dear Hiring Team,}
+\closing{Sincerely,}
+\makelettertitle
+
+I am applying for the Data Engineer, Wearables position (Job Number 176270). I am an R\&D engineer and PhD candidate with more than five years at CNR-STIIMA, the Italian National Research Council, building wearable and IoT sensing systems for health research. Most of that work is turning raw sensor signals into datasets that researchers can trust.
+
+For my PhD project, OmniTrack, I built the data pipeline end to end. Wearable tags send ultra-wideband ranging and IMU time series, ROS 2 nodes estimate each position, and every session is logged in MongoDB. On top of this I developed OmniAnalytics, a Python backend (pandas, FastAPI) with a React dashboard, which turns the raw recordings of a study with 16 blind participants into trial metrics such as route similarity (dynamic time warping, Fr\'echet distance), speed and target discovery.
+
+I designed it so that results can be traced back to their source. Raw recordings are never modified: corrections for sensor gaps, exclusions and annotations are stored separately, and the code is versioned in Git.
+
+I am also used to the setting around the data. PhiCube, the rehabilitation device I co-invented, is deployed in Italian clinics and is in two ongoing multicentre studies with 134 patients, and I defined its requirements together with clinicians. As Head of Product and co-founder of Rehabilia Technologies I set priorities and work with engineering, design and clinical partners, which has taught me to explain technical choices to people who are not engineers.
+
+My sensor data so far comes from people rather than companion animals, and I have not yet used BigQuery, Snowflake or Airflow. I have built by hand the stages they serve, from ingestion and cleaning to storage and analysis, and I would expect to become productive with them quickly.
+
+I would welcome the chance to discuss the role further.
+
+\makeletterclosing
+
+\end{document}

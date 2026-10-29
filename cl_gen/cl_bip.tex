@@ -1,0 +1,33 @@
+% Cover letter: Stage IoT (Job ID 2463, Roma / Milano), BIP
+% CV: Sections/cv_iot_engineer.tex -> cv_gen/cv_giovanni_tauro-bip.pdf
+% Letter in Italian (the posting is in Italian). babel-italian is not installed here,
+% so hyphenation is switched off instead of using English patterns on Italian words.
+\documentclass[11pt,a4paper,sans]{moderncv}
+\input{cl_gen/cl_base}
+
+\begin{document}
+\hyphenpenalty=10000 \exhyphenpenalty=10000 \emergencystretch=3em
+
+\clheader{R\&D Engineer, PhD Candidate | Embedded Systems \& IoT}
+
+\recipient{Team Talent Acquisition}{BIP}
+\date{13 ottobre 2026}
+\opening{Gentile team di selezione,}
+\closing{Cordiali saluti,}
+\makelettertitle
+
+vi scrivo per candidarmi alla posizione Stage IoT (Job ID 2463). Sono R\&D engineer al CNR-STIIMA e dottorando all'Università di Bologna, e negli ultimi anni mi sono occupato soprattutto di un progetto: OmniTrack.
+
+OmniTrack è nato da un'idea semplice: aiutare una persona a orientarsi in una stanza guidandola verso un punto con segnali visivi, sonori e aptici che cambiano man mano che si avvicina, un po' come nel gioco acqua e fuoco. Da quell'idea ho seguito tutto il percorso: la scelta dei componenti, i primi prototipi, il firmware in C++ dei moduli ESP32 che misurano le distanze in UWB, il collegamento via Bluetooth a un sistema ROS 2 su Linux che calcola la posizione, e la logica che regola il feedback in base alla distanza dall'obiettivo.
+
+Poi è arrivata la parte che considero più importante, cioè capire se lo strumento funzionava davvero. Ho misurato l'errore di localizzazione, l'ho ridotto con una calibrazione e un filtraggio dei dati, e ho portato il sistema fuori dal laboratorio in uno studio con 16 partecipanti non vedenti. Il lavoro è descritto nell'articolo \href{https://www.frontiersin.org/journals/communications-and-networks/articles/10.3389/frcmn.2026.1829998/abstract}{\color{blue}\textit{OmniTrack: A Multimodal IoT System for Indoor Localization and Feedback to Support Perceptual--Motor Skill Training}} (Frontiers in Communications and Networks, 2026), di cui sono primo autore.
+
+Questo percorso mi ha insegnato a portare un sistema IoT dall'idea alla validazione, ma sempre alla scala di un prototipo di ricerca: pochi dispositivi, una stanza, un gruppo di utenti. Quello che mi manca, e che cerco in BIP, è imparare a scalare: come si progettano sistemi e software pensati per molti dispositivi, per la produzione e per clienti con esigenze diverse. Mi candido per questo, e perché nell'annuncio ritrovo le attività che mi piace fare, dal bring-up di una scheda all'integrazione del software.
+
+Porto con me anche l'abitudine a lavorare con persone non tecniche. Sia al CNR sia in Rehabilia Technologies, la startup di cui sono co-fondatore, ho definito i requisiti dei dispositivi insieme a clinici e utenti.
+
+Sarei felice di raccontarvi di più in un colloquio.
+
+\makeletterclosing
+
+\end{document}
